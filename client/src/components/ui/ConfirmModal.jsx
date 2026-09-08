@@ -14,11 +14,9 @@ export default function ConfirmModal({
   useEffect(() => {
     if (!open) return;
 
-    // Prevent scrolling/interacting with the page behind the modal
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
 
-    // Escape closes the modal
     const handleKeyDown = (event) => {
       if (event.key === "Escape" && !loading) {
         onCancel();
@@ -48,7 +46,7 @@ export default function ConfirmModal({
         aria-labelledby="confirm-modal-title"
         onMouseDown={(event) => event.stopPropagation()}
       >
-        <div className="modal-icon">
+        <div className={`modal-icon ${danger ? "danger" : ""}`}>
           {danger ? "!" : "?"}
         </div>
 

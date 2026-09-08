@@ -1,12 +1,45 @@
-import { createContext, useContext, useEffect, useMemo, useState } from "react";
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
+
+import DarkModeRoundedIcon from "@mui/icons-material/DarkModeRounded";
+import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
+import LocalFireDepartmentRoundedIcon from "@mui/icons-material/LocalFireDepartmentRounded";
+import AcUnitRoundedIcon from "@mui/icons-material/AcUnitRounded";
+import ForestRoundedIcon from "@mui/icons-material/ForestRounded";
 
 const ThemeContext = createContext(null);
 
 export const THEMES = [
-  { id: "dark", label: "Noir", icon: "◐" },
-  { id: "light", label: "Ivory", icon: "☼" },
-  { id: "fire", label: "Ember", icon: "♨" },
-  { id: "ice", label: "Frost", icon: "❄" },
+  {
+    id: "dark",
+    label: "Dark Theme",
+    icon: <DarkModeRoundedIcon />,
+  },
+  {
+    id: "light",
+    label: "Light Theme",
+    icon: <LightModeRoundedIcon />,
+  },
+  {
+    id: "fire",
+    label: "Fire Theme",
+    icon: <LocalFireDepartmentRoundedIcon />,
+  },
+  {
+    id: "ice",
+    label: "Ice Theme",
+    icon: <AcUnitRoundedIcon />,
+  },
+  {
+    id: "forest",
+    label: "Forest Theme",
+    icon: <ForestRoundedIcon />,
+  },
 ];
 
 export function ThemeProvider({ children }) {
@@ -19,10 +52,17 @@ export function ThemeProvider({ children }) {
     localStorage.setItem("ms-theme", theme);
   }, [theme]);
 
+  const value = useMemo(
+    () => ({
+      theme,
+      setTheme,
+      themes: THEMES,
+    }),
+    [theme],
+  );
+
   return (
-    <ThemeContext.Provider
-      value={useMemo(() => ({ theme, setTheme, themes: THEMES }), [theme])}
-    >
+    <ThemeContext.Provider value={value}>
       {children}
     </ThemeContext.Provider>
   );

@@ -1,17 +1,28 @@
+import Tooltip from "@mui/material/Tooltip";
 import { useTheme } from "../../app/providers/ThemeProvider";
+
 export default function ThemeSwitcher() {
   const { theme, themes, setTheme } = useTheme();
+
   return (
     <div className="theme-switcher">
       {themes.map((t) => (
-        <button
+        <Tooltip
           key={t.id}
-          className={theme === t.id ? "active" : ""}
-          onClick={() => setTheme(t.id)}
           title={t.label}
+          placement="bottom"
+          arrow
+          enterDelay={300}
         >
-          {t.icon}
-        </button>
+          <button
+            type="button"
+            className={theme === t.id ? "active" : ""}
+            onClick={() => setTheme(t.id)}
+            aria-label={t.label}
+          >
+            {t.icon}
+          </button>
+        </Tooltip>
       ))}
     </div>
   );

@@ -9,6 +9,7 @@
     "seed:superadmin": "node src/scripts/seedSuperAdmin.js"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.3",
     "cookie-parser": "latest",
     "cors": "latest",
     "dotenv": "17.4.2",

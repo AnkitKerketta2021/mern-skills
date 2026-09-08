@@ -1,5 +1,7 @@
 import Reveal from "../../components/ui/Reveal";
 import { Link } from "react-router-dom";
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 const cards = [
   [
@@ -106,7 +108,7 @@ export default function LandingPage() {
                 <div className="card-line" />
                 <h3>{t}</h3>
                 <p>{d}</p>
-                <span className="card-arrow">↗</span>
+                <span className="card-arrow"><ArrowOutwardIcon /></span>
               </article>
             </Reveal>
           ))}
@@ -144,7 +146,7 @@ export default function LandingPage() {
             skill modules, progress, activity, profiles and administration.
           </p>
           <Link to="/signup" className="luxury-button">
-            Enter MERN SKILLS →
+            Enter MERN SKILLS <ArrowRightAltIcon />
           </Link>
         </Reveal>
       </section>
