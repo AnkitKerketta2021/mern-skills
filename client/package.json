@@ -1,0 +1,24 @@
+{
+  "name": "mern-skills-client",
+  "private": true,
+  "version": "0.3.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "latest",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "react-redux": "latest",
+    "react-router-dom": "7.18.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "latest",
+    "@vitejs/plugin-react": "latest",
+    "tailwindcss": "latest",
+    "vite": "8.2.2"
+  }
+}
