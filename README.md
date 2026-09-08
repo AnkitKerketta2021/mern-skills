@@ -1,8 +1,8 @@
 # MERN SKILLS
 
-<img src="" alt="preview1" width="720"/>
-<img src="" alt="preview2" width="720"/>
-<img src="" alt="preview3" width="720"/>
+<img src="assets/preview-images/preview1.png" alt="preview1" width="720"/>
+<img src="assets/preview-images/preview2.png" alt="preview2" width="720"/>
+<img src="assets/preview-images/preview3.png" alt="preview3" width="720"/>
 
 ## Included
 
