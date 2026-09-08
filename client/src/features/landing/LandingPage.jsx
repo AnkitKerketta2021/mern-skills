@@ -44,7 +44,7 @@ export default function LandingPage() {
         <div className="hero-glow" />
         <div className="hero-copy">
           <Reveal>
-            <span className="eyebrow">MERN SKILLS / PHASE 04</span>
+            <span className="eyebrow">MERN SKILLS</span>
           </Reveal>
           <Reveal delay={90}>
             <h1>

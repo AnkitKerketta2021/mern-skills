@@ -94,7 +94,6 @@ img {
   max-width: 100%;
 }
 
-/* Phase 3 landing/auth compatibility tokens */
 :root {
   --surface: var(--panel);
   --surface-2: var(--panel-2);
@@ -1261,7 +1260,6 @@ footer {
   }
 }
 
-/* Restored Phase 3 landing/auth visual language */
 .hero-section {
   position: relative;
   min-height: calc(100vh - 78px);

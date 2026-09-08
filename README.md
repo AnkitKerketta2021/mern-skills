@@ -1,6 +1,8 @@
 # MERN SKILLS
 
-Phase 4 extends the Phase 3 luxury MERN foundation into a role-aware workspace.
+<img src="" alt="preview1" width="720"/>
+<img src="" alt="preview2" width="720"/>
+<img src="" alt="preview3" width="720"/>
 
 ## Included
 

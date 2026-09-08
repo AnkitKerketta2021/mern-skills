@@ -72,7 +72,7 @@ export default function Sidebar({ open, onClose }) {
 
         <div className="sidebar-bottom">
           <div className="sidebar-note glass-card">
-            <div className="eyebrow">PHASE 04</div>
+            <div className="eyebrow">MERN SKILLS</div>
             <strong>Workspace expansion.</strong>
             <p>Role-aware navigation, admin tools, CRUD and polished fallbacks.</p>
           </div>

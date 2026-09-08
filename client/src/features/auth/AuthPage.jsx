@@ -43,7 +43,7 @@ export default function AuthPage({ mode }) {
           <span className="brand-mark">MS</span>MERN SKILLS
         </Link>
         <div className="auth-art-content">
-          <span className="eyebrow">PHASE 03 / SECURE CORE</span>
+          <span className="eyebrow">MERN SKILLS / SECURE CORE</span>
           <h1>Engineering with elegance.</h1>
           <p>
             A premium MERN foundation where security, architecture and visual
